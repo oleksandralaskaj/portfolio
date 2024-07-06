@@ -1,0 +1,25 @@
+//import fonts
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+//declare color variables
+$color-primary: #14110F;
+$color-secondary: #F3F3F4;
+$color-tertiary: #D9C5B2;
+
+h1 {
+  font-family: Bebas Neue, sans-serif;
+}
+div {
+  width: 100px;
+  height: 100px;
+}
+#one {
+  background-color: $color-primary;
+}
+
+#two {
+  background-color: $color-secondary;
+}
+
+#three {
+  background-color: $color-tertiary;
+}
