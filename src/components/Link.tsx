@@ -5,10 +5,11 @@ import styles from './Link.module.scss'
 
 type Props = PropsWithChildren<{
     to: To;
-    hash?: string
+    hash?: string;
+    download?: boolean
 }>
 
-export const Link = ({to, children, hash}: Props) => {
+export const Link = ({to, children, hash, download}: Props) => {
     return <div>
         {hash ?
             <HashLink to={`${to}${hash}`} className={styles.link}>{children}</HashLink> :
