@@ -1,0 +1,33 @@
+@import 'src/style/foundation';
+
+.title {
+  color: $color-secondary;
+  font: {
+    family: "Bebas Neue", sans-serif;
+    size: 8rem;
+  };
+  margin: 0;
+  width: 100%;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .subtitle {
+    color: $color-secondary;
+    font: {
+      family: "Montserrat", sans-serif;
+      size: 2rem;
+    };
+    margin: 0;
+    width: 38rem;
+  }
+
+  .extra {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
