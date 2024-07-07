@@ -2,6 +2,7 @@ import {Section} from "./Section.tsx";
 import {Heading} from "./Heading.tsx";
 import {LinkButton} from "./LinkButton.tsx";
 import styles from './Hero.module.scss'
+import {ArrowDownToLine} from "lucide-react";
 
 export const Hero = () => {
     return <Section className={styles.container}>
@@ -9,7 +10,7 @@ export const Hero = () => {
                  extra={<>
                      <LinkButton to={'https://github.com/oleksandralaskaj'}>Github</LinkButton>
                      <LinkButton to='/' hash="#contact">Contact</LinkButton>
-                     <LinkButton to="/files/valko_oleksandra_cv_en_cz_developer.pdf" download={true}>Download
+                     <LinkButton to="/files/valko_oleksandra_cv_en_cz_developer.pdf" download={true}><ArrowDownToLine /> Download
                          CV</LinkButton>
                  </>
                  }/>
