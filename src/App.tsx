@@ -1,12 +1,23 @@
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {Layout} from "./components/Layout.tsx";
+
+const router = createBrowserRouter([
+    {
+        element: <Layout/>,
+        children: [
+            {
+                path: "/",
+                element: <span className="nav">home</span>
+            },
+            {
+                path: "/label-beauty",
+                element: <span>label</span>
+            }
+        ]
+    },
+]);
+
+
 export function App() {
-
-    return (
-        <>
-            <h1>Portfolio website</h1>
-
-            <div id='one'></div>
-            <div id='two'></div>
-            <div id='three'></div>
-        </>
-    )
+    return <RouterProvider router={router}/>
 }

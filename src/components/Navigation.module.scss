@@ -1,0 +1,53 @@
+@import 'src/style/foundation';
+
+.container {
+  background-color: $color-primary;
+  display: flex;
+  justify-content: center;
+
+
+  div {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    max-width: 992px;
+
+    nav {
+      display: flex;
+      gap: 2rem;
+      font: {
+        family: Montserrat, sans-serif;
+        size: 1.25rem;
+        weight: 800;
+      }
+
+      padding: 2rem 0;
+
+      a {
+        color: $color-secondary;
+        text: {
+          transform: uppercase;
+          decoration: none;
+        }
+
+        &:hover {
+          color: $color-secondary-hover;
+        }
+
+        &:active {
+          color: $color-secondary-active;
+        }
+      }
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+}
+
+
+
