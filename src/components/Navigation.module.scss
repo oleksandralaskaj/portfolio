@@ -5,31 +5,31 @@
   display: flex;
   justify-content: center;
 
-
-  div {
+  .content {
     align-items: center;
     display: flex;
-    gap: 1rem;
     justify-content: space-between;
-    max-width: 992px;
+    width: 992px;
 
     nav {
       display: flex;
-      gap: 2rem;
       font: {
         family: Montserrat, sans-serif;
         size: 1.25rem;
         weight: 800;
       }
-
+      gap: 2rem;
       padding: 2rem 0;
+    }
 
-      a {
+    .modeicons {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .icon {
         color: $color-secondary;
-        text: {
-          transform: uppercase;
-          decoration: none;
-        }
+        height: 2rem;
 
         &:hover {
           color: $color-secondary-hover;
@@ -39,12 +39,6 @@
           color: $color-secondary-active;
         }
       }
-    }
-
-    div {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
     }
   }
 }

@@ -4,6 +4,7 @@ import stylesButtons from './LinkButton.module.scss';
 import {Moon, Sun} from 'lucide-react';
 import {useThemeContext} from "../contexts/ThemeContext.tsx";
 import {LinkButton} from "./LinkButton.tsx";
+import {Link} from "./Link.tsx";
 
 export const Navigation = () => {
     const {theme, toggleTheme} = useThemeContext()
@@ -11,10 +12,10 @@ export const Navigation = () => {
     return <div className={styles.container}>
         <div className={styles.content}>
             <nav>
-                <LinkButton to="/" hash="#hero">Home</LinkButton>
-                <LinkButton to="/" hash="#projects">Projects</LinkButton>
-                <HashLink to="/#about">About</HashLink>
-                <HashLink to="#contact">Contact</HashLink>
+                <Link to="/" hash="#hero">Home</Link>
+                <Link to="/" hash="#projects">Projects</Link>
+                <Link to="/" hash="#about">About</Link>
+                <Link to="" hash="#contacts">Contact</Link>
             </nav>
             <div className={styles.modeicons}>{
                 theme === 'light' ?
