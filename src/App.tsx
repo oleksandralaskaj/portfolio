@@ -1,5 +1,7 @@
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {Layout} from "./components/Layout.tsx";
+import {ThemeContextProvider} from "./contexts/ThemeContext.tsx";
+import {Hero} from "./components/Hero.tsx";
 
 const router = createBrowserRouter([
     {
@@ -7,7 +9,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <span className="nav">home</span>
+                element: <Hero/>
             },
             {
                 path: "/label-beauty",
@@ -17,7 +19,8 @@ const router = createBrowserRouter([
     },
 ]);
 
-
 export function App() {
-    return <RouterProvider router={router}/>
+    return <ThemeContextProvider>
+        <RouterProvider router={router}/>
+    </ThemeContextProvider>
 }
