@@ -1,6 +1,11 @@
 import styles from './Heading.module.scss'
-
-export const Heading = ({title, subtitle, extra}) => {
+import {ReactNode} from "react";
+type Props = {
+    title: string;
+    subtitle: string;
+    extra: ReactNode
+}
+export const Heading = ({title, subtitle, extra}:Props) => {
     return <>
         <h1 className={styles.title}>{title}</h1>
         <div className={styles.bottom}>

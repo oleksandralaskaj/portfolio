@@ -1,9 +1,6 @@
-import {HashLink} from 'react-router-hash-link';
 import styles from './Navigation.module.scss';
-import stylesButtons from './LinkButton.module.scss';
 import {Moon, Sun} from 'lucide-react';
 import {useThemeContext} from "../contexts/ThemeContext.tsx";
-import {LinkButton} from "./LinkButton.tsx";
 import {Link} from "./Link.tsx";
 
 export const Navigation = () => {
