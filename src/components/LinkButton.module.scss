@@ -1,0 +1,28 @@
+@import 'src/style/foundation';
+
+.button {
+  background-color: $color-primary;
+  border: $color-secondary, 2px, solid;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+
+  a {
+    font-size: 1.25rem;
+    color: $color-secondary;
+    text: {
+      transform: uppercase;
+      decoration: none;
+    }
+
+    &:hover {
+      color: $color-secondary-hover;
+    }
+
+    &:active {
+      color: $color-secondary-active;
+    }
+  }
+}
+
