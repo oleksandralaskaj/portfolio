@@ -1,11 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-  $color-primary: #D9C5B2;
-  $color-primary-hover: #c4af9a;
-  $color-primary-active: #b19b85;
-  $color-secondary: #14110F;
-  $color-secondary-hover: #4e4640;
-  $color-secondary-active: #71675f;
-  $color-tertiary: #F3F3F4;
+:global {
+  [data-theme="light"] {
+    --color-primary: #D9C5B2;
+    --color-primary-hover: #c4af9a;
+    --color-primary-active: #b19b85;
+    --color-secondary: #14110F;
+    --color-secondary-hover: #4e4640;
+    --color-secondary-active: #71675f;
+    --color-core-text: #b19b85;
+    --color-core-bg: #F3F3F4;
+  }
 
+  [data-theme="dark"] {
+    --color-primary: #14110F;
+    --color-primary-hover: #4e4640;
+    --color-primary-active: #71675f;
+    --color-secondary: #D9C5B2;
+    --color-secondary-hover: #c4af9a;
+    --color-secondary-active: #b19b85;
+    --color-core-text: #F3F3F4;
+    --color-core-bg: #14110F;
+  }
+}
+
+$color-primary: var(--color-primary);
+$color-primary-hover: var(--color-primary-hover);
+$color-primary-active: var(--color-primary-active);
+$color-secondary: var(--color-secondary);
+$color-secondary-hover: var(--color-secondary-hover);
+$color-secondary-active: var(--color-secondary-active);
+$color-core-text: var(--color-core-text);
+$color-core-bg: var(--color-core-bg);
