@@ -1,6 +1,6 @@
-import {Section} from "./Section.tsx";
+import {Section} from "../../components/Section.tsx";
 import styles from './About.module.scss';
-import {SectionHeader} from "./SectionHeader.tsx";
+import {SectionHeader} from "../../components/SectionHeader.tsx";
 import {ExperienceItem} from "./ExperienceItem.tsx";
 
 export const About = () => {

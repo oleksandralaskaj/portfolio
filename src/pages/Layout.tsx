@@ -1,4 +1,4 @@
-import {Navigation} from "./Navigation.tsx";
+import {Navigation} from "../components/Navigation.tsx";
 import {Outlet} from "react-router-dom";
 export const Layout = () => {
     return <>

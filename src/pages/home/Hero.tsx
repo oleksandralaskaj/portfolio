@@ -1,6 +1,6 @@
-import {Section} from "./Section.tsx";
-import {Heading} from "./Heading.tsx";
-import {LinkButton} from "./LinkButton.tsx";
+import {Section} from "../../components/Section.tsx";
+import {Heading} from "../../components/Heading.tsx";
+import {LinkButton} from "../../components/LinkButton.tsx";
 import styles from './Hero.module.scss'
 import {ArrowDownToLine, AtSign, MoveUpRight} from "lucide-react";
 
