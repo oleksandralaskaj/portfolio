@@ -1,7 +1,11 @@
-import {ReactNode} from "react";
+import {PropsWithChildren} from "react";
 import styles from './Section.module.scss';
 
-export const Section = ({className, id, children}: { className?: string; children: ReactNode }) => {
+type Props = {
+    id?: string,
+    className?: string
+}
+export const Section = ({className, id, children}: PropsWithChildren<Props>) => {
     return <div className={`${styles.container} ${className}`} id={id}>
         <div className={styles.content}>
             {children}

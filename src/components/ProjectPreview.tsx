@@ -8,6 +8,7 @@ type Props = {
     imgSmallUrl: string;
     btns: ReactNode;
     stack: ReactNode;
+    reverse?: string
 }
 export const ProjectPreview = ({title, subtitle, imgBigUrl, imgSmallUrl, btns, stack, reverse}: Props) => {
 
