@@ -1,7 +1,7 @@
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import {Layout} from "./components/Layout.tsx";
 import {ThemeContextProvider} from "./contexts/ThemeContext.tsx";
-import {Hero} from "./components/Hero.tsx";
+import {Home} from "./components/Home.tsx";
 
 const router = createBrowserRouter([
     {
@@ -9,7 +9,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Hero/>
+                element: <Home/>
             },
             {
                 path: "/label-beauty",
