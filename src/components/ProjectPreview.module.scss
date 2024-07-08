@@ -2,7 +2,7 @@
 
 .content {
   display: grid;
-  grid-template-columns: 22rem 22rem 14rem;
+  grid-template-columns: 22fr 22fr 14fr;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
   grid-template-rows: 22rem auto;
@@ -30,7 +30,7 @@
   }
 
   .subtitle {
-    color: $color-secondary;
+    color: $color-tertiary-text;
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
     font: {
@@ -41,7 +41,7 @@
   }
 
   .stack {
-    background-color: $color-primary;
+    background-color: $color-tertiary-accent;
     display: flex;
     gap: 1rem;
     grid-column: 3/ span 1;
@@ -78,7 +78,7 @@
 
 .reverse {
   display: grid;
-  grid-template-columns: 22rem 14rem 22rem;
+  grid-template-columns: 22fr 14fr 22fr;
 
   .heading {
     grid-column: 3 / span 1;
