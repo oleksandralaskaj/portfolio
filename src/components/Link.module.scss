@@ -1,17 +1,17 @@
 @import 'src/style/foundation';
 
 .link {
-    color: var(--color-secondary);
+    color: $color-secondary;
     text: {
       transform: uppercase;
       decoration: none;
     }
 
     &:hover {
-      color: var(--color-secondary-hover);
+      color: $color-secondary-hover;
     }
 
     &:active {
-      color: var(--color-secondary-active);
+      color: $color-secondary-active;
     }
 }

@@ -11,8 +11,8 @@ export const Hero = () => {
                      <LinkButton to={'https://github.com/oleksandralaskaj'}>
                          <MoveUpRight/>Github
                      </LinkButton>
-                     <LinkButton to='/' hash="#contact">
-                         <AtSign/>Contact
+                     <LinkButton to='/' hash="#contacts">
+                         <AtSign/>Contacts
                      </LinkButton>
                      <LinkButton to="/files/valko_oleksandra_cv_en_cz_developer.pdf" download={true}>
                          <ArrowDownToLine/> Download CV

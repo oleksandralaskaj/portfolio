@@ -12,7 +12,7 @@ export const Navigation = () => {
                 <Link to="/" hash="#hero">Home</Link>
                 <Link to="/" hash="#projects">Projects</Link>
                 <Link to="/" hash="#about">About</Link>
-                <Link to="" hash="#contacts">Contact</Link>
+                <Link to="" hash="#contacts">Contacts</Link>
             </nav>
             <div className={styles.modeicons}>{
                 theme === 'light' ?

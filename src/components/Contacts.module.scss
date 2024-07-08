@@ -1,0 +1,44 @@
+@import 'src/style/foundation';
+
+.container {
+  background-color: $color-primary;
+
+  h1 {
+    color: $color-secondary;
+    font: {
+      family: "Bebas Neue", sans-serif;
+      size: 5rem;
+    };
+    margin: 0 0 3rem 0;
+    padding: 0;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+
+    .subtitle {
+      color: $color-secondary;
+      font: {
+        family: "Bebas Neue", sans-serif;
+        size: 2rem;
+      };
+      margin: 0;
+
+      &:hover {
+        color: $color-secondary-hover;
+      }
+
+      &:active {
+        color: $color-secondary-active;
+      }
+    }
+  }
+
+  p {
+    font: {
+      family: "Montserrat", sans-serif;
+      size: 1.25rem;
+    };
+  }
+}
