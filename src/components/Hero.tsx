@@ -5,7 +5,7 @@ import styles from './Hero.module.scss'
 import {ArrowDownToLine, AtSign, MoveUpRight} from "lucide-react";
 
 export const Hero = () => {
-    return <Section className={styles.container}>
+    return <Section className={styles.container} id={'hero'}>
         <Heading title={"Hello, I'm Sasha"} subtitle={'Junior full-stack web developer with graphic design background'}
                  extra={<>
                      <LinkButton to={'https://github.com/oleksandralaskaj'}>

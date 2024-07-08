@@ -9,7 +9,7 @@ export const Projects = () => {
     return <Section className={styles.container} id={'projects'}>
         <SectionHeader title={'Projects'}
                        subtitle={'Here are a couple of recent project demonstrating my skills in web development and UX design fields'}
-                       reverse={'reverse'}/>
+                       reverse={''}/>
         <ProjectPreview title={'Floor planner app'}
                         subtitle={"An app created for real estate agents and home owner, that seek accurate representation of property without unneeded technicalities."}
                         imgBigUrl={''}
