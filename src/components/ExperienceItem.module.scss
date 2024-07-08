@@ -1,0 +1,66 @@
+@import 'src/style/foundation';
+
+.container {
+  display: flex;
+  gap: 2rem;
+
+  .dates {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 6rem;
+
+    .block {
+      background-color: $color-tertiary-accent;
+      height: 2rem;
+      width: 6rem;
+    }
+
+    .numbers {
+      color: $color-tertiary-accent;
+      display: flex;
+      font: {
+        family: 'Montserrat', sans-serif;
+        size: 1.25rem;
+      }
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .details {
+    color: $color-tertiary-text;
+    font: {
+      family: 'Montserrat', sans-serif;
+      size: 1.1rem;
+      weight: 400;
+    }
+
+    h4 {
+      font: {
+        weight: 600;
+      }
+      margin-top: 0;
+    }
+
+    h3 {
+      font: {
+        size: 2rem;
+        weight: 800;
+      }
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    p, li {
+      font-size: 1rem;
+    }
+  }
+}
