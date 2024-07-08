@@ -1,7 +1,7 @@
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
-import {Layout} from "./components/Layout.tsx";
+import {Layout} from "./pages/Layout.tsx";
 import {ThemeContextProvider} from "./contexts/ThemeContext.tsx";
-import {Home} from "./components/Home.tsx";
+import {Home} from "./pages/Home.tsx";
 
 const router = createBrowserRouter([
     {

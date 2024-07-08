@@ -1,15 +1,15 @@
-import {Section} from "./Section.tsx";
+import {Section} from "../../components/Section.tsx";
 import {ProjectPreview} from "./ProjectPreview.tsx";
-import {LinkButton} from "./LinkButton.tsx";
+import {LinkButton} from "../../components/LinkButton.tsx";
 import {MoveUpRight} from "lucide-react";
-import {SectionHeader} from "./SectionHeader.tsx";
+import {SectionHeader} from "../../components/SectionHeader.tsx";
 import styles from "./Projects.module.scss";
 
 export const Projects = () => {
     return <Section className={styles.container} id={'projects'}>
         <SectionHeader title={'Projects'}
                        subtitle={'Here are a couple of recent project demonstrating my skills in web development and UX design fields'}
-                       reverse={'reverse'}/>
+                       reverse={''}/>
         <ProjectPreview title={'Floor planner app'}
                         subtitle={"An app created for real estate agents and home owner, that seek accurate representation of property without unneeded technicalities."}
                         imgBigUrl={''}

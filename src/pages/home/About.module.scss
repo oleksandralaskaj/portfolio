@@ -1,0 +1,17 @@
+@import 'src/style/foundation';
+
+.container {
+  background: $color-tertiary-bg;
+
+  .main {
+    display: flex;
+    gap: 2rem;
+
+    .half {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 32rem;
+    }
+  }
+}
