@@ -27,7 +27,17 @@ export const About = () => {
                     end={'06/19'}
                     place={'University of Economics and Management, Prague ------- master’s degree program'}
                     position={"Multimedia in economic practice"}
-                    extra={<p>creative crafts, management in creative fields</p>}/>
+                    extra={<ul>
+                        <li>
+                            creative crafts such as graphic design, UX design, photo and video editing
+                        </li>
+                        <li>
+                            semiotics, art history and cultural politics
+                        </li>
+                        <li>
+                            management in creative fields
+                        </li>
+                          </ul>}/>
             </div>
             <div className={styles.half}>
                 <ExperienceItem
