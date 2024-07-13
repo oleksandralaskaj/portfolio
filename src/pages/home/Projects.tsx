@@ -9,14 +9,17 @@ import styles from "./Projects.module.scss";
 export const Projects = () => {
     return <Section className={styles.container} id={'projects'}>
         <SectionHeader title={'Projects'}
-                       subtitle={<>Here is a<Nbsp/>couple of<Nbsp/>projects from both web development and UX design field, which I<Nbsp/>recently had a chance to<Nbsp/>work<Nbsp/>on.</>}
-                       reverse={''}/>
+                       subtitle={<>Here is a<Nbsp/>couple of<Nbsp/>projects from both web development and UX design
+                           field, which I<Nbsp/>recently had a chance to<Nbsp/>work<Nbsp/>on.</>}
+        />
         <ProjectPreview title={'Floor planner app'}
-                        subtitle={<>An app created for<Nbsp/>real estate agents and home owner, that<Nbsp/>seek accurate representation of<Nbsp/>property without unneeded technicalities.</>}
+                        subtitle={<>An app created for<Nbsp/>real estate agents and home owner, that<Nbsp/>seek accurate
+                            representation of<Nbsp/>property without unneeded technicalities.</>}
                         imgBigUrl={'/images/floor_planner_title.png'}
                         imgSmallUrl={'/images/floor_planner_secondary.png'}
                         btns={<>
-                            <LinkButton to={'https://github.com/oleksandralaskaj/web_dev_bootcamp/tree/main/FLOOR_PLANNER_APP'}>
+                            <LinkButton
+                                to={'https://github.com/oleksandralaskaj/web_dev_bootcamp/tree/main/FLOOR_PLANNER_APP'}>
                                 <MoveUpRight/>Github
                             </LinkButton>
                             <LinkButton to={''}>
@@ -32,7 +35,7 @@ export const Projects = () => {
                             <img src="/images/logo-laravel.svg" alt="laravel-logo"/>
                             {/*<img src="/images/logo-figma.svg" alt="figma-logo"/>*/}
                         </>}
-                        reverse={''}/>
+        />
         <ProjectPreview title={'My portfolio'}
                         subtitle={"One place with detailed information about my background and recent projects."}
                         imgBigUrl={'/images/my_portfolio_title.jpg'}
@@ -51,9 +54,10 @@ export const Projects = () => {
                             <img src="/images/logo-typescript.svg" alt="typescript-logo"/>
                             <img src="/images/logo-figma.svg" alt="figma-logo"/>
                         </>}
-                        reverse={'reverse'}/>
+                        reverse/>
         <ProjectPreview title={'Label beauty website'}
-                        subtitle={<>A platform shared by<Nbsp/>beauty salon and skincare e-shop under umbrella of<Nbsp/>Label Beauty. Concept, web is<Nbsp/>currently under development.</>}
+                        subtitle={<>A platform shared by<Nbsp/>beauty salon and skincare e-shop under umbrella of<Nbsp/>Label
+                            Beauty. Concept, web is<Nbsp/>currently under development.</>}
                         imgBigUrl={'/images/label_beauty_title_img.png'}
                         imgSmallUrl={'/images/label_beauty_mood.jpg'}
                         btns={<>
@@ -65,6 +69,6 @@ export const Projects = () => {
                         stack={<>
                             <img src="/images/logo-figma.svg" alt="figma-logo"/>
                         </>}
-                        reverse={''}/>
+        />
     </Section>
 }

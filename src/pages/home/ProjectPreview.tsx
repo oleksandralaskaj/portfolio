@@ -8,9 +8,8 @@ type Props = {
     imgSmallUrl: string;
     btns: ReactNode;
     stack: ReactNode;
-    reverse?: string
-}
-export const ProjectPreview = ({title, subtitle, imgBigUrl, imgSmallUrl, btns, stack, reverse}: Props) => {
+    reverse?: boolean}
+export const ProjectPreview = ({title, subtitle, imgBigUrl, imgSmallUrl, btns, stack, reverse = false}: Props) => {
 
     return <div className={`${styles.content} ${reverse && styles.reverse}`}>
         <img src={imgBigUrl} alt="project-photo" className={styles.imgBig}/>

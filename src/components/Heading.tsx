@@ -3,14 +3,15 @@ import {ReactNode} from "react";
 type Props = {
     title: string;
     subtitle: string;
-    extra: ReactNode
+    extra?: ReactNode;
+    extraStyle: string
 }
-export const Heading = ({title, subtitle, extra}:Props) => {
+export const Heading = ({title, subtitle, extra, extraStyle}:Props) => {
     return <>
         <h1 className={styles.title}>{title}</h1>
         <div className={styles.bottom}>
             <p className={styles.subtitle}>{subtitle}</p>
-            <div className={styles.extra}>{extra}</div>
+            <div className={styles[extraStyle]}>{extra}</div>
         </div>
     </>
 }

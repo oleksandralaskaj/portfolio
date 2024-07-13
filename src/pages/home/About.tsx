@@ -9,7 +9,7 @@ export const About = () => {
         <SectionHeader title={"About me"}
                        subtitle={<>Practically and academically, I<Nbsp/>was gaining new knowledge and skills, that<Nbsp/>shape me<Nbsp/>as a<Nbsp/>professional. I’m<Nbsp/>always eager to<Nbsp/>continuously learn and grow in<Nbsp/>
                            my<Nbsp/>field.</>}
-                       reverse={'reverse'}/>
+                       reverse/>
         <div className={styles.main}>
             <div className={styles.half}>
                 <ExperienceItem

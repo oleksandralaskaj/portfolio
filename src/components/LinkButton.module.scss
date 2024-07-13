@@ -3,9 +3,10 @@
 .button {
   border: $color-secondary 2px solid;
   border-radius: 2rem;
-  padding: 0.5rem 1rem;
-  margin: 0.5rem;
+  display: inline-block;
   font-family: 'Bebas Neue', sans-serif;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
 
   &:hover {
     border: $color-secondary-hover 2px solid;

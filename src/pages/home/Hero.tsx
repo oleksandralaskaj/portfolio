@@ -18,6 +18,6 @@ export const Hero = () => {
                          <ArrowDownToLine/> Download CV
                      </LinkButton>
                  </>
-                 }/>
+                 } extraStyle={'extra-col-right'}/>
     </Section>
 }

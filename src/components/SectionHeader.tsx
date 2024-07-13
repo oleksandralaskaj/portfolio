@@ -4,9 +4,9 @@ import {ReactNode} from "react";
 type Props = {
     title: string,
     subtitle: ReactNode,
-    reverse?: string
+    reverse?: boolean
 }
-export const SectionHeader = ({title, subtitle, reverse}: Props) => {
+export const SectionHeader = ({title, subtitle, reverse = false}: Props) => {
     return <div className={`${styles.basic} ${reverse && styles.reverse}`}>
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.subtitle}>{subtitle}</p>
