@@ -2,11 +2,13 @@ import {Section} from "../../components/Section.tsx";
 import styles from './About.module.scss';
 import {SectionHeader} from "../../components/SectionHeader.tsx";
 import {ExperienceItem} from "./ExperienceItem.tsx";
+import {Nbsp} from "../../components/Nbsp.tsx";
 
 export const About = () => {
     return <Section className={styles.container} id={'about'}>
         <SectionHeader title={"About me"}
-                       subtitle={'Practically and academically, I was gaining new knowledge and skills, that shape me as a professional. I’m always eager to continuously learn and grow in my field.'}
+                       subtitle={<>Practically and academically, I<Nbsp/>was gaining new knowledge and skills, that<Nbsp/>shape me<Nbsp/>as a<Nbsp/>professional. I’m<Nbsp/>always eager to<Nbsp/>continuously learn and grow in<Nbsp/>
+                           my<Nbsp/>field.</>}
                        reverse={'reverse'}/>
         <div className={styles.main}>
             <div className={styles.half}>
@@ -46,10 +48,10 @@ export const About = () => {
                     position={"Graphic Designer"}
                     extra={
                         <ul>
-                            <li>visual assets for online presentation of whole brand portfolio,</li>
-                            <li>management and art direction of photography commissions,</li>
-                            <li>implementation of projects aimed to improve team cooperation,</li>
-                            <li>creation of graphic standard manual and documentation</li>
+                            <li>visual assets for online presentation of<Nbsp/>whole brand portfolio</li>
+                            <li>management and art direction of<Nbsp/>photography commissions</li>
+                            <li>implementation of projects aimed to<Nbsp/>improve team cooperation</li>
+                            <li>creation of<Nbsp/>graphic standard manual and documentation</li>
                         </ul>
                     }/>
                 <ExperienceItem
@@ -58,8 +60,8 @@ export const About = () => {
                     position={"Graphic Designer"}
                     extra={
                         <ul>
-                            <li>banner and layout design for internal systems, </li>
-                            <li>creation and redesign of graphic production for internal and external company representation</li>
+                            <li>banner and layout design for internal systems </li>
+                            <li>creation and redesign of<Nbsp/>graphic production for<Nbsp/>internal and external company representation</li>
                         </ul>
                     }/>
             </div>
