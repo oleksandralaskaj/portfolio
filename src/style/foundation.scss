@@ -1,28 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :global {
   [data-theme="light"] {
-    --color-primary: #D9C5B2;
+    --color-primary: #d9c5b2;
     --color-primary-hover: #c4af9a;
     --color-primary-active: #b19b85;
     --color-secondary: #201c19;
     --color-secondary-hover: #4e4640;
     --color-secondary-active: #71675f;
-    --color-tertiary-accent: #D9C5B2;
+    --color-tertiary-accent: #d9c5b2;
     --color-tertiary-text: #201c19;
-    --color-tertiary-bg: #F3F3F4;
+    --color-tertiary-bg: #f3f3f4;
   }
 
   [data-theme="dark"] {
     --color-primary: #201c19;
     --color-primary-hover: #4e4640;
     --color-primary-active: #71675f;
-    --color-secondary: #D9C5B2;
+    --color-secondary: #d9c5b2;
     --color-secondary-hover: #c4af9a;
     --color-secondary-active: #b19b85;
-    --color-tertiary-accent: #D9C5B2;
-    --color-tertiary-text: #F3F3F4;
+    --color-tertiary-accent: #d9c5b2;
+    --color-tertiary-text: #f3f3f4;
     --color-tertiary-bg: #201c19;
   }
 }
@@ -34,5 +33,5 @@ $color-secondary: var(--color-secondary);
 $color-secondary-hover: var(--color-secondary-hover);
 $color-secondary-active: var(--color-secondary-active);
 $color-tertiary-accent: var(--color-tertiary-accent);
-$color-tertiary-text: var( --color-tertiary-text);
+$color-tertiary-text: var(--color-tertiary-text);
 $color-tertiary-bg: var(--color-tertiary-bg);

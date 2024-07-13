@@ -1,1 +1,1 @@
-export const Nbsp = () => '\u00A0';
+export const Nbsp = () => "\u00A0";

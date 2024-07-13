@@ -1,4 +1,4 @@
-@import 'src/style/foundation';
+@import "src/style/foundation";
 
 .content {
   display: grid;
@@ -17,7 +17,7 @@
       font: {
         family: "Bebas Neue", sans-serif;
         size: 2.5rem;
-      };
+      }
       margin-top: 0;
       margin-bottom: 1rem;
     }
@@ -36,7 +36,7 @@
     font: {
       family: "Montserrat", sans-serif;
       size: 1.25rem;
-    };
+    }
     margin: 0;
   }
 
@@ -44,11 +44,11 @@
     background-color: $color-tertiary-accent;
     display: flex;
     gap: 1rem;
-    grid-column: 3/ span 1;
+    grid-column: 3 / span 1;
     grid-row: 2 / span 1;
     align-items: center;
     height: 3rem;
-    padding:0.5rem 1rem;
+    padding: 0.5rem 1rem;
 
     img {
       height: 2rem;
@@ -91,7 +91,7 @@
   }
 
   .stack {
-    grid-column: 2/ span 1;
+    grid-column: 2 / span 1;
     grid-row: 2 / span 1;
   }
 

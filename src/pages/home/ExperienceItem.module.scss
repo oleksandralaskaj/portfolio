@@ -1,4 +1,4 @@
-@import 'src/style/foundation';
+@import "src/style/foundation";
 
 .container {
   display: flex;
@@ -20,7 +20,7 @@
       color: $color-tertiary-accent;
       display: flex;
       font: {
-        family: 'Montserrat', sans-serif;
+        family: "Montserrat", sans-serif;
         size: 1.1rem;
       }
       flex-direction: column;
@@ -35,7 +35,7 @@
   .details {
     color: $color-tertiary-text;
     font: {
-      family: 'Montserrat', sans-serif;
+      family: "Montserrat", sans-serif;
       size: 1rem;
       weight: 400;
     }
@@ -59,7 +59,8 @@
       padding-left: 1.5rem;
     }
 
-    p, li {
+    p,
+    li {
       font-size: 1rem;
     }
   }
