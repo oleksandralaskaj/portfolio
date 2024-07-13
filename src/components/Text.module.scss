@@ -1,0 +1,10 @@
+@import "src/style/foundation";
+
+.text {
+  color: $color-secondary;
+  font: {
+    family: "Montserrat", sans-serif;
+    size: 1.25rem;
+  }
+  margin: 0;
+}
