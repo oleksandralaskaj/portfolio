@@ -6,7 +6,7 @@ import styles from './Link.module.scss'
 type Props = PropsWithChildren<{
     to: To;
     hash?: string;
-    download?: string
+    download?: boolean
 }>
 
 export const Link = ({to, children, hash, download}: Props) => {

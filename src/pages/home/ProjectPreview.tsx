@@ -3,7 +3,7 @@ import styles from './ProjectPreview.module.scss'
 
 type Props = {
     title: string;
-    subtitle: string;
+    subtitle: ReactNode;
     imgBigUrl: string;
     imgSmallUrl: string;
     btns: ReactNode;

@@ -1,8 +1,9 @@
 import styles from "./SectionHeader.module.scss";
+import {ReactNode} from "react";
 
 type Props = {
     title: string,
-    subtitle: string,
+    subtitle: ReactNode,
     reverse?: string
 }
 export const SectionHeader = ({title, subtitle, reverse}: Props) => {

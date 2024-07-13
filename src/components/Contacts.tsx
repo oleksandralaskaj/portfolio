@@ -21,7 +21,7 @@ export const Contacts = () => {
             <Link to={'https://www.linkedin.com/in/oleksandra-valko/'}>
                 <h5 className={styles.subtitle}>Linkedin <MoveUpRight/></h5>
             </Link>
-            <Link to={"/files/valko_oleksandra_cv_en_cz_developer.pdf"} download={'download'}>
+            <Link to={"/files/valko_oleksandra_cv_en_cz_developer.pdf"} download>
                 <h5 className={styles.subtitle}>Download CV <ArrowDownToLine/></h5>
             </Link>
         </div>
