@@ -1,0 +1,12 @@
+@import "src/style/foundation";
+
+.container {
+  display: block;
+  overflow: hidden;
+
+  .image {
+    width: 100%;
+    max-height: 100%;
+    height: auto;
+  }
+}
