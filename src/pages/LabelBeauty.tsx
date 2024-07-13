@@ -1,28 +1,50 @@
-import { ProjectDetail } from "./project-detail/ProjectDetail.tsx";
+import { ProjectDetailContent } from "./project-detail/ProjectDetailContent.tsx";
 import { LinkButton } from "../components/LinkButton.tsx";
 import { MoveUpRight } from "lucide-react";
+import { Heading } from "../components/Heading.tsx";
+import styles from "./project-detail/ProjectDetail.module.scss";
+import { Section } from "../components/Section.tsx";
 
 export const LabelBeauty = () => {
   return (
-    <ProjectDetail
-      headingTitle={"label beauty"}
-      headingSubtitle={
-        "UX design project for a concept connecting beauty salon and e-shop with professional skincare."
-      }
-      headingExtra={
-        <div>
-          <img src="/images/logo-figma.svg" alt="figma-logo" />
-          <LinkButton
-            to={
-              "https://www.figma.com/proto/QeqPBGaeX92Arg8sIlDwgE/labelbeauty.cz?node-id=0-1&t=tQIcCxQRM3bZEj8Q-1"
-            }
-          >
-            <MoveUpRight />
-            Figma Project
-          </LinkButton>
-        </div>
-      }
-      headingExtraStyle={"extra-row-left"}
-    />
+    <div className={styles.container}>
+      <Section>
+        <Heading
+          title={"label beauty"}
+          subtitle={
+            "UX design project for a concept connecting beauty salon and e-shop with professional skincare."
+          }
+          extra={
+            <>
+              <img src="/images/logo-figma.svg" alt="figma-logo" />
+              <LinkButton
+                to={
+                  "https://www.figma.com/proto/QeqPBGaeX92Arg8sIlDwgE/labelbeauty.cz?node-id=0-1&t=tQIcCxQRM3bZEj8Q-1"
+                }
+              >
+                <MoveUpRight />
+                Figma Project
+              </LinkButton>
+            </>
+          }
+          extraStyle={"extra-row-left"}
+        />{" "}
+        <ProjectDetailContent
+          imgMainUrl={"/images/label_beauty_title_detail.png"}
+          section1Title={"Client assignment"}
+          section1Text={
+            "Label Beauty began as a beauty salon in Prague, providing a range of services including aesthetic cosmetology, hair removal, lash extensions, and hand care treatments. Initially focused on social media, the company recognized the necessity for a website with more comprehensive functionality. "
+          }
+          section2Title={"Double functionality"}
+          section2Text={
+            "At that point the business model was also expanded by incorporation of an e-commerce platform offering premium cosmetic products. The goal was to merge two businesses into a single entity while maintaining clarity for users regarding the distinction between physical and online services offered by each part of interface."
+          }
+          feat1={"online quiz helping to choose right products from e-shop"}
+          feat2={"basic e-shop design"}
+          feat3={"list of procedures with pricing"}
+          feat4={"reservation form fon treatment in salon"}
+        />
+      </Section>
+    </div>
   );
 };

@@ -12,7 +12,9 @@
 
 .bottom {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  gap: 1rem;
   width: 100%;
 
   .subtitle {
@@ -34,6 +36,11 @@
   .extra-row-left {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  img {
+    height: 2rem;
   }
 }

@@ -1,13 +1,15 @@
 @import "src/style/foundation";
 
 .container {
+  align-items: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   padding: 8rem 0;
 
   .content {
     display: flex;
     flex-direction: column;
+    gap: 3rem;
     width: 992px;
   }
 }
