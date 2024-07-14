@@ -31,13 +31,15 @@
     align-items: flex-end;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 1rem;
   }
 
   .extra-row-left {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 1rem;
   }
 

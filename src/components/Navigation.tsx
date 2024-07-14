@@ -19,6 +19,9 @@ export const Navigation = () => {
             </Link>
           ) : (
             <>
+              <Link to="/" hash="#hero">
+                Home
+              </Link>
               <Link to="/" hash="#projects">
                 Projects
               </Link>
