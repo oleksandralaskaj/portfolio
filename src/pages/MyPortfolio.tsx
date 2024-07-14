@@ -11,15 +11,15 @@ export const MyPortfolio = () => {
     <div className={styles.container}>
       <Section>
         <Heading
-          title={"My Portfolio Page"}
+          title={"my portfolio page"}
           subtitle={
             "The project, which integrates development and design, serves as an extension of my curriculum vitae. It provides detailed information about my background and recent projects."
           }
           extra={
             <>
-              <img src="/images/logo-react.svg" alt="react-logo" />
-              <img src="/images/logo-typescript.svg" alt="ts-logo" />
               <img src="/images/logo-figma.svg" alt="figma-logo" />
+              <img src="/images/logo-typescript.svg" alt="ts-logo" />
+              <img src="/images/logo-react.svg" alt="react-logo" />
               <LinkButton to={"https://github.com/oleksandralaskaj/portfolio"}>
                 <MoveUpRight />
                 Github
@@ -37,21 +37,25 @@ export const MyPortfolio = () => {
           extraStyle={"extra-row-left"}
         />{" "}
         <ProjectDetailContent
-          imgMainUrl={"/images/label_beauty_title_detail.png"}
-          section1Title={"Client assignment"}
-          section1Url={"/images/label_beauty_mood_2.jpg"}
+          imgMainUrl={"/images/my_portfolio_title_detail.jpg"}
+          section1Title={"Projects"}
+          section1Url={"/images/my_portfolio_projects.jpg"}
           section1Text={
-            "Label Beauty began as a beauty salon in Prague, providing a range of services including aesthetic cosmetology, hair removal, lash extensions, and hand care treatments. Initially focused on social media, the company recognized the necessity for a website with more comprehensive functionality. "
+            "The Projects section provides a quick glimpse of recent work across various disciplines. Clicking on a project takes the user to a detailed page with specific information about that project."
           }
-          section2Title={"Double functionality"}
-          section2Url={"/images/label_beauty_mood_3.jpg"}
+          section2Title={"education and experience"}
+          section2Url={"/images/my_portfolio_work.jpg"}
           section2Text={
-            "At that point the business model was also expanded by incorporation of an e-commerce platform offering premium cosmetic products. The goal was to merge two businesses into a single entity while maintaining clarity for users regarding the distinction between physical and online services offered by each part of interface."
+            "Discover my diverse journey—from graphic design to programming, management, marketing, and advertising. This section provides an overview of my achievements and highlights core professional traits."
           }
-          feat1={"online quiz helping to choose right products from e-shop"}
-          feat2={"basic e-shop design"}
-          feat3={"list of procedures with pricing"}
-          feat4={"reservation form fon treatment in salon"}
+          feat1text={"created with React and TypeScript"}
+          feat2text={"light/dark mode switch"}
+          feat3text={"deployed on Netlify"}
+          feat4text={"mobile first"}
+          feat1url={"/images/my_portfolio_ts_react.png"}
+          feat2url={"/images/my_portfolio_modes.png"}
+          feat3url={"/images/my_portfolio_netlify.jpg"}
+          feat4url={"/images/my_portfolio_mobile_first.jpg"}
         />
       </Section>
       <Contacts />

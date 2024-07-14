@@ -4,7 +4,7 @@
   color: $color-secondary;
   font: {
     family: "Bebas Neue", sans-serif;
-    size: 8rem;
+    size: 6rem;
   }
   margin: 0;
   width: 100%;
@@ -47,6 +47,9 @@
 }
 
 @media (min-width: $breakpoint-tablet) {
+  .title {
+    font-size: 8rem;
+  }
   .bottom {
     gap: 3rem;
     .subtitle {

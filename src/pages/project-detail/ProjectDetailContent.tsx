@@ -2,7 +2,6 @@ import styles from "./ProjectDetailContent.module.scss";
 import { PointHeader } from "./PointHeader.tsx";
 import { Text } from "../../components/Text.tsx";
 import { Image } from "../../components/Image.tsx";
-import { MoveRight } from "lucide-react";
 
 type Props = {
   imgMainUrl: string;
@@ -12,10 +11,14 @@ type Props = {
   section2Title: string;
   section2Text: string;
   section2Url: string;
-  feat1: string;
-  feat2: string;
-  feat3: string;
-  feat4: string;
+  feat1text: string;
+  feat2text: string;
+  feat3text: string;
+  feat4text: string;
+  feat1url: string;
+  feat2url: string;
+  feat3url: string;
+  feat4url: string;
 };
 export const ProjectDetailContent = ({
   imgMainUrl,
@@ -25,10 +28,14 @@ export const ProjectDetailContent = ({
   section2Title,
   section2Url,
   section2Text,
-  feat1,
-  feat2,
-  feat3,
-  feat4,
+  feat1text,
+  feat2text,
+  feat3text,
+  feat4text,
+  feat1url,
+  feat2url,
+  feat3url,
+  feat4url,
 }: Props) => {
   return (
     <div className={styles.container}>
@@ -41,14 +48,14 @@ export const ProjectDetailContent = ({
           <Text>{section1Text}</Text>
         </div>
         <div className={styles.section1Img}>
-          <Image src={section1Url} alt={"salon"} />
+          <Image src={section1Url} alt={"first-point"} />
         </div>
         <div className={styles.pointTwoText}>
           <PointHeader number={"/02"} title={section2Title} />
           <Text>{section2Text}</Text>
         </div>
         <div className={styles.section2Img}>
-          <Image src={section2Url} alt={"skincare"} />
+          <Image src={section2Url} alt={"second-point"} />
         </div>
       </div>
 
@@ -58,23 +65,20 @@ export const ProjectDetailContent = ({
         </div>
         <div className={styles.featItems}>
           <div className={styles.featItem1}>
-            <Image src="/images/label_beauty_quiz.png" alt="quiz" />
-            <Text>→ {feat1}</Text>
+            <Image src={feat1url} alt="feature-1" />
+            <Text>→ {feat1text}</Text>
           </div>
           <div className={styles.featItem2}>
-            <Image src="/images/label_beauty_e-shop.png" alt="e-shop" />
-            <Text>→ {feat2}</Text>
+            <Image src={feat2url} alt="feature-2" />
+            <Text>→ {feat2text}</Text>
           </div>
           <div className={styles.featItem3}>
-            <Image src="/images/label_beauty_services.png" alt="price" />
-            <Text>→ {feat3}</Text>
+            <Image src={feat3url} alt="feature-3" />
+            <Text>→ {feat3text}</Text>
           </div>
           <div className={styles.featItem4}>
-            <Image
-              src="/images/label_beauty_reservation.png"
-              alt="reservation"
-            />
-            <Text>→ {feat4}</Text>
+            <Image src={feat4url} alt="feature-4" />
+            <Text>→ {feat4text}</Text>
           </div>
         </div>
       </div>

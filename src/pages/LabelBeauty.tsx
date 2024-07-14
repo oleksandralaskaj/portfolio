@@ -42,10 +42,14 @@ export const LabelBeauty = () => {
           section2Text={
             "At that point the business model was also expanded by incorporation of an e-commerce platform offering premium cosmetic products. The goal was to merge two businesses into a single entity while maintaining clarity for users regarding the distinction between physical and online services offered by each part of interface."
           }
-          feat1={"online quiz helping to choose right products from e-shop"}
-          feat2={"basic e-shop design"}
-          feat3={"list of procedures with pricing"}
-          feat4={"reservation form for treatment in salon"}
+          feat1text={"online quiz helping to choose right products from e-shop"}
+          feat2text={"basic e-shop design"}
+          feat3text={"list of procedures with pricing"}
+          feat4text={"reservation form for treatment in salon"}
+          feat1url={"/images/label_beauty_quiz.png"}
+          feat2url={"/images/label_beauty_e-shop.png"}
+          feat3url={"/images/label_beauty_services.png"}
+          feat4url={"/images/label_beauty_reservation.png"}
         />
       </Section>
       <Contacts />
