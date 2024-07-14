@@ -45,7 +45,7 @@ export const LabelBeauty = () => {
           feat1={"online quiz helping to choose right products from e-shop"}
           feat2={"basic e-shop design"}
           feat3={"list of procedures with pricing"}
-          feat4={"reservation form fon treatment in salon"}
+          feat4={"reservation form for treatment in salon"}
         />
       </Section>
       <Contacts />

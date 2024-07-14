@@ -116,7 +116,7 @@ export const Projects = () => {
             currently under development.
           </>
         }
-        imgBigUrl={"/images/label_beauty_title_img.png"}
+        imgBigUrl={"/images/label_beauty_title.png"}
         imgSmallUrl={"/images/label_beauty_mood.jpg"}
         btns={
           <>

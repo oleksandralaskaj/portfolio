@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         element: <FloorPlanner />,
       },
       {
-        path: "/lmy-portfolio",
+        path: "/my-portfolio",
         element: <MyPortfolio />,
       },
     ],

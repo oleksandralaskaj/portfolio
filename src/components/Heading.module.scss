@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 2rem;
   width: 100%;
 
   .subtitle {
@@ -28,9 +28,10 @@
   }
 
   .extra-col-right {
+    align-items: flex-end;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    gap: 1rem;
   }
 
   .extra-row-left {
@@ -46,8 +47,11 @@
 }
 
 @media (min-width: $breakpoint-tablet) {
-  .subtitle {
-    width: 38rem;
+  .bottom {
+    gap: 3rem;
+    .subtitle {
+      width: 38rem;
+    }
   }
 }
 
