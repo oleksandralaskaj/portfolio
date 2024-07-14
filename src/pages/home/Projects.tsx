@@ -30,7 +30,7 @@ export const Projects = () => {
         title={"Floor planner app"}
         subtitle={
           <>
-            An app created for
+            WORK IN PROGRESS: an app created for
             <Nbsp />
             real estate agents and home owner, that
             <Nbsp />
@@ -51,10 +51,10 @@ export const Projects = () => {
               <MoveUpRight />
               Github
             </LinkButton>
-            <LinkButton to={""}>
-              <MoveUpRight />
-              Real thing
-            </LinkButton>
+            {/*<LinkButton to={""}>*/}
+            {/*  <MoveUpRight />*/}
+            {/*  Real thing*/}
+            {/*</LinkButton>*/}
             {/*<LinkButton to={''}>*/}
             {/*    <MoveUpRight/>Figma Project*/}
             {/*</LinkButton>*/}
@@ -68,7 +68,6 @@ export const Projects = () => {
             {/*<img src="/images/logo-figma.svg" alt="figma-logo"/>*/}
           </>
         }
-        to={"/floor-planner"}
       />
       <ProjectPreview
         title={"My portfolio"}

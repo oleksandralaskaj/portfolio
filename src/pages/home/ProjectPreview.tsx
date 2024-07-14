@@ -8,7 +8,7 @@ type Props = {
   subtitle: ReactNode;
   imgBigUrl: string;
   imgSmallUrl: string;
-  to: string;
+  to?: string;
   btns: ReactNode;
   stack: ReactNode;
   reverse?: boolean;

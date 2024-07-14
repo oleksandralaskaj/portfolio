@@ -3,10 +3,14 @@ import { ReactNode } from "react";
 import styles from "./TransitiveLink.module.scss";
 
 type Props = {
-  to: To;
+  to?: To;
   children: ReactNode;
 };
 export const TransitiveLink = ({ to, children }: Props) => {
+  if (!to) {
+    return children;
+  }
+
   return (
     <ReactRouterLink to={to} className={styles.link}>
       {children}
