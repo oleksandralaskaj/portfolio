@@ -2,5 +2,14 @@
 
 .container {
   background: $color-primary;
-  padding-top: 14rem;
+  padding: 1rem;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .container {
+    padding-top: 14rem;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
 }

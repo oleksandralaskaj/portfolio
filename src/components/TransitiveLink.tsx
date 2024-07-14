@@ -8,7 +8,7 @@ type Props = {
 };
 export const TransitiveLink = ({ to, children }: Props) => {
   return (
-    <ReactRouterLink to={to} target="_blank" className={styles.link}>
+    <ReactRouterLink to={to} className={styles.link}>
       {children}
     </ReactRouterLink>
   );

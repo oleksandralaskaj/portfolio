@@ -4,12 +4,26 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 8rem 0;
+  padding: 1rem 0;
 
   .content {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    width: 992px;
+    width: 100%;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .container {
+    padding: 8rem 0;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .container {
+    .content {
+      width: 992px;
+    }
   }
 }

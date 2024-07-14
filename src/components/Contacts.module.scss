@@ -3,6 +3,7 @@
 .container {
   background-color: $color-primary;
   color: $color-secondary;
+  padding: 1rem;
 
   h1 {
     font: {
@@ -15,7 +16,7 @@
 
   .content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 
     .subtitle {
       font: {
@@ -38,6 +39,16 @@
     font: {
       family: "Montserrat", sans-serif;
       size: 1.25rem;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .container {
+    padding: 0;
+    .content {
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 }

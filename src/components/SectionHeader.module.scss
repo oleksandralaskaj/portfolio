@@ -2,6 +2,7 @@
 
 .basic {
   display: flex;
+  flex-direction: column;
 
   .title {
     color: $color-tertiary-accent;
@@ -9,11 +10,6 @@
       family: "Bebas Neue", sans-serif;
       size: 5rem;
     }
-    margin: 0;
-    position: relative;
-    width: 0;
-    left: -7rem;
-    writing-mode: vertical-lr;
   }
 
   .subtitle {
@@ -23,17 +19,34 @@
       size: 1.5rem;
     }
     margin: 0;
-    width: 30rem;
   }
 }
 
-.reverse {
-  display: flex;
-  flex-direction: row-reverse;
-
-  .title {
-    width: 0;
-    left: 6rem;
-    writing-mode: vertical-rl;
+@media (min-width: $breakpoint-tablet) {
+  .basic {
+    flex-direction: row;
+    .title {
+      margin: 0;
+      position: relative;
+      width: 0;
+      left: -7rem;
+      writing-mode: vertical-lr;
+    }
+    .subtitle {
+      width: 30rem;
+    }
   }
+  .reverse {
+    display: flex;
+    flex-direction: row-reverse;
+
+    .title {
+      width: 0;
+      left: 6rem;
+      writing-mode: vertical-rl;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
 }

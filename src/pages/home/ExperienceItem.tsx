@@ -21,7 +21,7 @@ export const ExperienceItem = ({
         <div className={styles.block}></div>
         <div className={styles.numbers}>
           <p>{end}</p>
-          <p>{"----"}</p>
+          <p>—</p>
           <p>{start}</p>
         </div>
       </div>

@@ -1,17 +1,10 @@
 @import "src/style/foundation";
 
 .content {
-  display: grid;
-  grid-template-columns: 22fr 22fr 14fr;
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
-  grid-template-rows: 22rem auto;
-  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
 
   .heading {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-
     .title {
       color: $color-secondary;
       font: {
@@ -31,8 +24,6 @@
 
   .subtitle {
     color: $color-tertiary-text;
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
     font: {
       family: "Montserrat", sans-serif;
       size: 1.25rem;
@@ -44,11 +35,10 @@
     background-color: $color-tertiary-accent;
     display: flex;
     gap: 1rem;
-    grid-column: 3 / span 1;
-    grid-row: 2 / span 1;
     align-items: center;
     height: 3rem;
     padding: 0.5rem 1rem;
+    width: fit-content;
 
     img {
       height: 2rem;
@@ -56,52 +46,91 @@
   }
 
   .imgSmall {
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
+    display: none;
   }
 
   .imgBig {
-    grid-column: 2 / span 2;
-    grid-row: 1 / span 1;
-    height: 100%;
-    width: 100%;
+    height: 16rem;
+    width: auto;
     object-fit: cover;
     object-position: center;
   }
 }
 
-.reverse {
-  display: grid;
-  grid-template-columns: 22fr 14fr 22fr;
+@media (min-width: $breakpoint-tablet) {
+  .content {
+    display: grid;
+    grid-template-columns: 22fr 22fr 14fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-template-rows: 22rem auto;
 
-  .heading {
-    grid-column: 3 / span 1;
-    grid-row: 2 / span 1;
+    .heading {
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1;
+
+      .title {
+        margin-top: 0;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .subtitle {
+      grid-column: 2 / span 1;
+      grid-row: 2 / span 1;
+    }
+
+    .stack {
+      grid-column: 3 / span 1;
+      grid-row: 2 / span 1;
+    }
+
+    .imgSmall {
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+    }
+
+    .imgBig {
+      height: 100%;
+      width: 100%;
+      grid-column: 2 / span 2;
+      grid-row: 1 / span 1;
+    }
   }
 
-  .subtitle {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-  }
+  .reverse {
+    display: grid;
+    grid-template-columns: 22fr 14fr 22fr;
 
-  .stack {
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
-  }
+    .heading {
+      grid-column: 3 / span 1;
+      grid-row: 2 / span 1;
+    }
 
-  .imgSmall {
-    background-color: gray;
-    grid-column: 3 / span 1;
-    grid-row: 1 / span 1;
-  }
+    .subtitle {
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1;
+    }
 
-  .imgBig {
-    background-color: gray;
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 1;
+    .stack {
+      grid-column: 2 / span 1;
+      grid-row: 2 / span 1;
+    }
+
+    .imgSmall {
+      grid-column: 3 / span 1;
+      grid-row: 1 / span 1;
+    }
+
+    .imgBig {
+      background-color: gray;
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 1;
+    }
   }
 }

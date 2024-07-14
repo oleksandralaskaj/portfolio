@@ -2,4 +2,11 @@
 
 .container {
   background: $color-tertiary-bg;
+  padding: 1rem;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .container {
+    padding: 0;
+  }
 }
