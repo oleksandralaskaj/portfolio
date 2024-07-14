@@ -10,6 +10,7 @@
       family: "Bebas Neue", sans-serif;
       size: 5rem;
     }
+    margin: 0 0 1rem 0;
   }
 
   .subtitle {
@@ -28,8 +29,8 @@
     .title {
       margin: 0;
       position: relative;
-      width: 0;
       left: -7rem;
+      width: 0;
       writing-mode: vertical-lr;
     }
     .subtitle {
@@ -46,7 +47,4 @@
       writing-mode: vertical-rl;
     }
   }
-}
-
-@media (min-width: $breakpoint-desktop) {
 }

@@ -11,8 +11,7 @@
         family: "Bebas Neue", sans-serif;
         size: 2.5rem;
       }
-      margin-top: 0;
-      margin-bottom: 1rem;
+      margin: 2rem 0 0.5rem 0;
     }
 
     .btns {
@@ -28,21 +27,11 @@
       family: "Montserrat", sans-serif;
       size: 1.25rem;
     }
-    margin: 0;
+    margin: 1rem 0;
   }
 
   .stack {
-    background-color: $color-tertiary-accent;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    height: 3rem;
-    padding: 0.5rem 1rem;
-    width: fit-content;
-
-    img {
-      height: 2rem;
-    }
+    display: none;
   }
 
   .imgSmall {
@@ -81,8 +70,18 @@
     }
 
     .stack {
+      align-items: center;
+      background-color: $color-tertiary-accent;
+      display: flex;
+      gap: 1rem;
       grid-column: 3 / span 1;
       grid-row: 2 / span 1;
+      height: 3rem;
+      padding: 0.5rem 1rem;
+
+      img {
+        height: 2rem;
+      }
     }
 
     .imgSmall {
@@ -131,6 +130,19 @@
       background-color: gray;
       grid-column: 1 / span 2;
       grid-row: 1 / span 1;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .content {
+    .heading {
+      .title {
+        margin-top: 0;
+      }
+    }
+    .subtitle {
+      margin: 0;
     }
   }
 }

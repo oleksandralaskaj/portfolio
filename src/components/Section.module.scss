@@ -10,19 +10,15 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    padding: 3rem 0;
     width: 100%;
-  }
-}
-
-@media (min-width: $breakpoint-tablet) {
-  .container {
-    padding: 8rem 0;
   }
 }
 
 @media (min-width: $breakpoint-desktop) {
   .container {
     .content {
+      padding: 8rem 0;
       width: 992px;
     }
   }
