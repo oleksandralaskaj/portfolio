@@ -78,6 +78,10 @@ export const Projects = () => {
         imgSmallUrl={"/images/my_portfolio_secondary.png"}
         btns={
           <>
+            <LinkButton to={"/my-portfolio"}>
+              <MoveUpRight />
+              More info
+            </LinkButton>
             <LinkButton to={"https://github.com/oleksandralaskaj/portfolio"}>
               <MoveUpRight />
               Github
@@ -119,6 +123,10 @@ export const Projects = () => {
         imgSmallUrl={"/images/label_beauty_mood.jpg"}
         btns={
           <>
+            <LinkButton to={"/label-beauty"}>
+              <MoveUpRight />
+              More info
+            </LinkButton>
             <LinkButton
               to={
                 "https://www.figma.com/proto/QeqPBGaeX92Arg8sIlDwgE/labelbeauty.cz?node-id=0-1&t=tQIcCxQRM3bZEj8Q-1"

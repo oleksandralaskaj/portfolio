@@ -3,10 +3,13 @@
 .container {
   background: $color-tertiary-bg;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: $breakpoint-tablet) {
   .container {
+    gap: 20rem;
     padding: 0;
   }
 }
