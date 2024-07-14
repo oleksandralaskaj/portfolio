@@ -1,11 +1,14 @@
-import { ReactNode } from "react";
 import styles from "./ProjectPreview.module.scss";
+import { Image } from "../../components/Image.tsx";
+import { TransitiveLink } from "../../components/TransitiveLink.tsx";
+import { ReactNode } from "react";
 
 type Props = {
   title: string;
   subtitle: ReactNode;
   imgBigUrl: string;
   imgSmallUrl: string;
+  to: string;
   btns: ReactNode;
   stack: ReactNode;
   reverse?: boolean;
@@ -15,16 +18,27 @@ export const ProjectPreview = ({
   subtitle,
   imgBigUrl,
   imgSmallUrl,
+  to,
   btns,
   stack,
   reverse = false,
 }: Props) => {
   return (
     <div className={`${styles.content} ${reverse && styles.reverse}`}>
-      <img src={imgBigUrl} alt="project-photo" className={styles.imgBig} />
-      <img src={imgSmallUrl} alt="project-photo" className={styles.imgSmall} />
+      <TransitiveLink to={to}>
+        <div className={styles.imgBig}>
+          <Image src={imgBigUrl} alt="project-photo" />
+        </div>
+      </TransitiveLink>
+      <TransitiveLink to={to}>
+        <div className={styles.imgSmall}>
+          <Image src={imgSmallUrl} alt="project-photo" />
+        </div>
+      </TransitiveLink>
       <div className={styles.heading}>
-        <h3 className={styles.title}>{title}</h3>
+        <TransitiveLink to={to}>
+          <h3 className={styles.title}>{title}</h3>
+        </TransitiveLink>
         <div className={styles.btns}>{btns}</div>
       </div>
       <p className={styles.subtitle}>{subtitle}</p>

@@ -11,7 +11,7 @@ type Props = PropsWithChildren<{
 
 export const Link = ({ to, children, hash, download }: Props) => {
   return (
-    <div>
+    <>
       {hash ? (
         <HashLink to={`${to}${hash}`} className={styles.link}>
           {children}
@@ -26,6 +26,6 @@ export const Link = ({ to, children, hash, download }: Props) => {
           {children}
         </ReactRouterLink>
       )}
-    </div>
+    </>
   );
 };

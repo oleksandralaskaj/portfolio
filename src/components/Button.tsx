@@ -1,8 +1,8 @@
 import { ButtonHTMLAttributes } from "react";
 
 export const Button = ({
-  onClick,
   children,
+  ...rest
 }: ButtonHTMLAttributes<HTMLButtonElement>) => {
-  return <button onClick={onClick}>{children}</button>;
+  return <button {...rest}>{children}</button>;
 };

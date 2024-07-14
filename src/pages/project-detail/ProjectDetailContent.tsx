@@ -7,8 +7,10 @@ type Props = {
   imgMainUrl: string;
   section1Title: string;
   section1Text: string;
+  section1Url: string;
   section2Title: string;
   section2Text: string;
+  section2Url: string;
   feat1: string;
   feat2: string;
   feat3: string;
@@ -18,7 +20,9 @@ export const ProjectDetailContent = ({
   imgMainUrl,
   section1Title,
   section1Text,
+  section1Url,
   section2Title,
+  section2Url,
   section2Text,
   feat1,
   feat2,
@@ -31,9 +35,15 @@ export const ProjectDetailContent = ({
         <div className={styles.imgMain}>
           <Image src={imgMainUrl} alt="main" />
         </div>
+        <div className={styles.section1Img}>
+          <Image src={section1Url} alt={"salon"} />
+        </div>
         <div className={styles.pointOneText}>
           <PointHeader number={"/01"} title={section1Title} />
           <Text>{section1Text}</Text>
+        </div>
+        <div className={styles.section2Img}>
+          <Image src={section2Url} alt={"skincare"} />
         </div>
         <div className={styles.pointTwoText}>
           <PointHeader number={"/02"} title={section2Title} />

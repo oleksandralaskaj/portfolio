@@ -68,6 +68,7 @@ export const Projects = () => {
             {/*<img src="/images/logo-figma.svg" alt="figma-logo"/>*/}
           </>
         }
+        to={"/floor-planner"}
       />
       <ProjectPreview
         title={"My portfolio"}
@@ -99,6 +100,7 @@ export const Projects = () => {
             <img src="/images/logo-figma.svg" alt="figma-logo" />
           </>
         }
+        to={"/my-portfolio"}
         reverse
       />
       <ProjectPreview
@@ -133,6 +135,7 @@ export const Projects = () => {
             <img src="/images/logo-figma.svg" alt="figma-logo" />
           </>
         }
+        to={"/label-beauty"}
       />
     </Section>
   );
