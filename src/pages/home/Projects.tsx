@@ -6,6 +6,7 @@ import { SectionHeader } from "../../components/SectionHeader.tsx";
 import { Nbsp } from "../../components/Nbsp.tsx";
 import styles from "./Projects.module.scss";
 import { TransitiveLink } from "../../components/TransitiveLink.tsx";
+import { Button } from "../../components/Button.tsx";
 
 export const Projects = () => {
   return (
@@ -80,8 +81,10 @@ export const Projects = () => {
         btns={
           <>
             <TransitiveLink to={"/my-portfolio"}>
-              <MoveUpRight />
-              More info
+              <Button>
+                <MoveUpRight />
+                <p>More info</p>
+              </Button>
             </TransitiveLink>
             <LinkButton to={"https://github.com/oleksandralaskaj/portfolio"}>
               <MoveUpRight />
@@ -125,8 +128,10 @@ export const Projects = () => {
         btns={
           <>
             <TransitiveLink to={"/label-beauty"}>
-              <MoveUpRight />
-              More info
+              <Button>
+                <MoveUpRight />
+                <p>More info</p>
+              </Button>
             </TransitiveLink>
             <LinkButton
               to={
