@@ -5,8 +5,12 @@ import { Heading } from "../components/Heading.tsx";
 import styles from "./project-detail/ProjectDetail.module.scss";
 import { Section } from "../components/Section.tsx";
 import { Contacts } from "../components/Contacts.tsx";
+import { useEffect } from "react";
 
 export const LabelBeauty = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className={styles.container}>
       <Section>
