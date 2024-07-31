@@ -75,6 +75,7 @@ export const Projects = () => {
               {/*<img src="/images/logo-figma.svg" alt="figma-logo"/>*/}
             </>
           }
+          to={"/floor-planner"}
         />
         <ProjectPreview
           title={"My portfolio"}
