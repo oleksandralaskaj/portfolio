@@ -2,14 +2,15 @@ import styles from "./ProjectDetailContent.module.scss";
 import { PointHeader } from "./PointHeader.tsx";
 import { Text } from "../../components/Text.tsx";
 import { Image } from "../../components/Image.tsx";
+import { ReactNode } from "react";
 
 type Props = {
   imgMainUrl: string;
   section1Title: string;
-  section1Text: string;
+  section1Text: string | ReactNode;
   section1Url: string;
   section2Title: string;
-  section2Text: string;
+  section2Text: string | ReactNode;
   section2Url: string;
   feat1text: string;
   feat2text: string;

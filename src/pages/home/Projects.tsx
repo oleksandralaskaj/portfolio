@@ -33,7 +33,7 @@ export const Projects = () => {
           title={"Floor planner app"}
           subtitle={
             <>
-              WORK IN PROGRESS: an app created for
+              An app created for
               <Nbsp />
               real estate agents and home owner, that
               <Nbsp />
@@ -46,18 +46,22 @@ export const Projects = () => {
           imgSmallUrl={"/images/floor_planner_secondary.png"}
           btns={
             <>
+              <TransitiveLink to={"/floor-planner"}>
+                <Button>
+                  <MoveUpRight />
+                  <p>More info</p>
+                </Button>
+              </TransitiveLink>
               <LinkButton
-                to={
-                  "https://github.com/oleksandralaskaj/web_dev_bootcamp/tree/main/FLOOR_PLANNER_APP"
-                }
+                to={"https://github.com/oleksandralaskaj/floor_planner"}
               >
                 <MoveUpRight />
                 Github
               </LinkButton>
-              {/*<LinkButton to={""}>*/}
-              {/*  <MoveUpRight />*/}
-              {/*  Real thing*/}
-              {/*</LinkButton>*/}
+              <LinkButton to={"https://www.laskaj.cz/"}>
+                <MoveUpRight />
+                Real thing
+              </LinkButton>
               {/*<LinkButton to={''}>*/}
               {/*    <MoveUpRight/>Figma Project*/}
               {/*</LinkButton>*/}

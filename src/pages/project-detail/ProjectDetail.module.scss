@@ -3,10 +3,23 @@
 .container {
   background: $color-primary;
   padding: 1rem;
+
+  .btns {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+  }
 }
 
 @media (min-width: $breakpoint-tablet) {
   .container {
     padding-top: 7rem;
+
+    .btns {
+      flex-direction: row;
+      margin-top: 4rem;
+    }
   }
 }
