@@ -14,7 +14,7 @@ export const LinkButton = ({ children, to, download, hash }: Props) => {
       {hash ? (
         <HashLink to={`${to}${hash}`}>{children}</HashLink>
       ) : (
-        <ReactRouterLink to={to} download={download}>
+        <ReactRouterLink to={to} download={download} target="_blank">
           {children}
         </ReactRouterLink>
       )}
